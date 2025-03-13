@@ -3,7 +3,7 @@
 process SPAdes { 
 
 tag "$sampleid"
-publishDir "Result Spades", mode:"copy"
+
 
 
 conda "bioconda::spades=4.1.0"

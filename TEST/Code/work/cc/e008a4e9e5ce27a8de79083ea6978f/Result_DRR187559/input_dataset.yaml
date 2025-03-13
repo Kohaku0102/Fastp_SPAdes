@@ -1,0 +1,7 @@
+- "left reads":
+  - "/home/kohaku/TEST/Code/work/cc/e008a4e9e5ce27a8de79083ea6978f/DRR187559.cleaned.R1.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/kohaku/TEST/Code/work/cc/e008a4e9e5ce27a8de79083ea6978f/DRR187559.cleaned.R2.fastq.gz"
+  "type": "paired-end"

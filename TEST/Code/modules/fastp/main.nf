@@ -1,11 +1,7 @@
 
-process fastp{
+process fastp {
 tag "$sampleid"
 
-
-publishDir "Result", pattern:'*.fastq.gz', mode:'copy'
-publishDir "Fastp_report", pattern: '*fastp.html',mode:'copy'
-publishDir "Fastp_report", pattern: '*fastp.json',mode:'copy'
 
 
 conda "bioconda::fastp=0.24.0"

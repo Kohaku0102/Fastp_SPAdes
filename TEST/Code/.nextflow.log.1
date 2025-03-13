@@ -1,0 +1,68 @@
+Mar-13 12:05:21.287 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -c /home/kohaku/TEST/Code/.conf/module.config --reads '/home/kohaku/TEST/Input/*_{_1,_2}.fastq.gz' --outdir /home/kohaku/TEST/Output
+Mar-13 12:05:21.812 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
+Mar-13 12:05:21.912 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/kohaku/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Mar-13 12:05:22.009 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-13 12:05:22.026 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-13 12:05:22.051 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-13 12:05:22.123 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-13 12:05:22.352 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/kohaku/TEST/Code/nextflow.config
+Mar-13 12:05:22.397 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/kohaku/TEST/Code/.conf/module.config
+Mar-13 12:05:22.407 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/kohaku/TEST/Code/nextflow.config
+Mar-13 12:05:22.410 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/kohaku/TEST/Code/.conf/module.config
+Mar-13 12:05:22.682 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/kohaku/.nextflow/secrets/store.json
+Mar-13 12:05:22.774 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@680362a] - activable => nextflow.secret.LocalSecretsProvider@680362a
+Mar-13 12:05:22.959 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-13 12:05:24.243 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-13 12:05:25.801 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Mar-13 12:05:25.852 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [scruffy_meninsky] DSL2 - revision: b31ea0a1e9
+Mar-13 12:05:25.859 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-13 12:05:25.861 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-13 12:05:26.114 [main] DEBUG nextflow.Session - Session UUID: ce23cdb5-0705-4045-8a0f-9c99014e827c
+Mar-13 12:05:26.115 [main] DEBUG nextflow.Session - Run name: scruffy_meninsky
+Mar-13 12:05:26.138 [main] DEBUG nextflow.Session - Executor pool size: 4
+Mar-13 12:05:26.212 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-13 12:05:26.245 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-13 12:05:26.467 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.4 build 5934
+  Created: 20-01-2025 16:47 UTC (23:47 ICST)
+  System: Linux 5.15.167.4-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 33867@DTD [127.0.1.1]
+  CPUs: 4 - Mem: 5.7 GB (2.1 GB) - Swap: 2 GB (2 GB)
+Mar-13 12:05:26.575 [main] DEBUG nextflow.Session - Work-dir: /home/kohaku/TEST/Code/work [ext2/ext3]
+Mar-13 12:05:26.577 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/kohaku/TEST/Code/bin
+Mar-13 12:05:26.599 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-13 12:05:26.634 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-13 12:05:26.811 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-13 12:05:26.853 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-13 12:05:27.031 [main] DEBUG nextflow.Session - Session start
+Mar-13 12:05:27.549 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-13 12:05:29.430 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:fastp` matches process de_novo:cleaned_denovo:fastp
+Mar-13 12:05:29.509 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-13 12:05:29.511 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-13 12:05:29.534 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-13 12:05:29.558 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=5.7 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Mar-13 12:05:29.583 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-13 12:05:29.967 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPAdes` matches process de_novo:cleaned_denovo:SPAdes
+Mar-13 12:05:29.972 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-13 12:05:29.972 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-13 12:05:29.993 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: de_novo:cleaned_denovo:SPAdes, SPAdes, de_novo:cleaned_denovo:fastp, fastp
+Mar-13 12:05:30.000 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Mar-13 12:05:30.019 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > de_novo:cleaned_denovo:fastp
+Mar-13 12:05:30.022 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/kohaku/TEST/Input/; pattern: *_{_1,_2}.fastq.gz; options: [:]
+Mar-13 12:05:30.036 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > de_novo:cleaned_denovo:SPAdes
+Mar-13 12:05:30.046 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_0d6644a2ea959489: /home/kohaku/TEST/Code/main.nf
+  Script_ca061c821a4a3ebe: /home/kohaku/TEST/Code/workflows/denovo.nf
+  Script_e69aa194080e1a16: /home/kohaku/TEST/Code/modules/SPAdes/main.nf
+  Script_238d86b98d333670: /home/kohaku/TEST/Code/modules/fastp/main.nf
+Mar-13 12:05:30.046 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-13 12:05:30.047 [main] DEBUG nextflow.Session - Session await
+Mar-13 12:05:30.073 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-13 12:05:30.146 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-13 12:05:30.152 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-13 12:05:30.190 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-13 12:05:30.539 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-13 12:05:30.655 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-13 12:05:30.657 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
